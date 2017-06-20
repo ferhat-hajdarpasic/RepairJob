@@ -55,11 +55,10 @@
     <Content Include="public\README.md" />
     <Content Include="public\src\my-app.html" />
     <Content Include="public\src\my-icons.html" />
-    <Content Include="public\src\my-view1.html" />
-    <Content Include="public\src\my-view2.html" />
-    <Content Include="public\src\my-view3.html" />
     <Content Include="public\src\my-view404.html" />
+    <Content Include="public\src\search-client.html" />
     <Content Include="public\src\shared-styles.html" />
+    <Content Include="public\src\update-status.html" />
     <Content Include="public\test\.eslintrc.json" />
     <Content Include="public\test\index.html" />
     <Content Include="public\test\my-view1.html" />
