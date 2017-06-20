@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "node server",
-    "postinstall": "cd public; bower install"
+    "postinstall": "cd public && bower install"
   },
   "license": "Apache",
   "engines": {
