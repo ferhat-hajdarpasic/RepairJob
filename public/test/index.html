@@ -10,22 +10,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
     <title>Tests</title>
 
     <script src="../bower_components/web-component-tester/browser.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <script>
-      WCT.loadSuites([
-        // Load 'my-view1.html' test suite, using native shadow dom
-        'my-view1.html?dom=shadow',
-        // Load 'my-view1.html' test suite, using shadydom
-        'my-view1.html?wc-shadydom=true',
-      ]);
+        WCT.loadSuites([
+            'create-client.html?dom=shadow',
+            'create-client.html?wc-shadydom=true',
+        ]);
     </script>
-  </body>
+</body>
+
 </html>
