@@ -1,11 +1,15 @@
 {
   "name": "repair-job",
+  "description": "RepairJob",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node server"
   },
-  "description": "RepairJob",
+  "license": "Apache",
+  "engines": {
+    "node": "~0.10.0 || ~4.2.0"
+  },
   "author": {
     "name": "ferha"
   },
