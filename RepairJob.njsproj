@@ -28,6 +28,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="public\service-worker.js" />
+    <Compile Include="public\sw-precache-config.js" />
     <Compile Include="server.js" />
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
@@ -35,12 +37,41 @@
     <Content Include="favicon.ico" />
     <Content Include="HTMLPage.html" />
     <Content Include="package.json" />
+    <Content Include="public\.eslintrc.json" />
+    <Content Include="public\.gitignore" />
+    <Content Include="public\bower.json" />
     <Content Include="public\example.txt" />
+    <Content Include="public\images\favicon.ico" />
+    <Content Include="public\images\manifest\icon-144x144.png" />
+    <Content Include="public\images\manifest\icon-192x192.png" />
+    <Content Include="public\images\manifest\icon-48x48.png" />
+    <Content Include="public\images\manifest\icon-512x512.png" />
+    <Content Include="public\images\manifest\icon-72x72.png" />
+    <Content Include="public\images\manifest\icon-96x96.png" />
+    <Content Include="public\index.html" />
+    <Content Include="public\manifest.json" />
+    <Content Include="public\package.json" />
+    <Content Include="public\polymer.json" />
+    <Content Include="public\README.md" />
+    <Content Include="public\src\my-app.html" />
+    <Content Include="public\src\my-icons.html" />
+    <Content Include="public\src\my-view1.html" />
+    <Content Include="public\src\my-view2.html" />
+    <Content Include="public\src\my-view3.html" />
+    <Content Include="public\src\my-view404.html" />
+    <Content Include="public\src\shared-styles.html" />
+    <Content Include="public\test\.eslintrc.json" />
+    <Content Include="public\test\index.html" />
+    <Content Include="public\test\my-view1.html" />
     <Content Include="README.md" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\images\manifest\" />
+    <Folder Include="public\src\" />
+    <Folder Include="public\test\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
