@@ -1,5 +1,10 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/paper-input/paper-textarea.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-styles/color.html">
 
 <dom-module id="create-client">
     <template>
@@ -9,13 +14,39 @@
 
         padding: 10px;
       }
+      paper-button {
+        font-family: 'Roboto', 'Noto', sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+        -webkit-font-smoothing: antialiased;
+      }
+      paper-button.indigo {
+        background-color: var(--paper-indigo-500);
+        color: white;
+        --paper-button-raised-keyboard-focus: {
+          background-color: var(--paper-pink-a200) !important;
+          color: white !important;
+        };
+      }
+      paper-button.indigo:hover {
+        background-color: var(--paper-indigo-400);
+      }
+      paper-button.disabled {
+        color: white;
+      }        
     </style>
 
     <div class="card">
-      <div class="circle">1</div>
-      <h1>Create Client</h1>
-      <p>Ut labores minimum atomorum pro. Laudem tibique ut has.</p>
-      <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Cu mei vide viris gloriatur, at populo eripuit sit.</p>
+      <div class="circle">Create Client</div>
+      <h1>Client details</h1>
+      <paper-input always-float-label label="Floating label"></paper-input>
+      <paper-input label="username">
+        <iron-icon icon="mail" slot="prefix"></iron-icon>
+        <div slot="suffix">@email.com</div>
+      </paper-input>
+      <h1>First update</h1>
+      <paper-textarea label="Comment" ></paper-textarea>
+      <paper-button raised class="indigo">Save</paper-button>
     </div>
   </template>
 
